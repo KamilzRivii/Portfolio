@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+
+    <meta name="description" content="Opis zawartości strony dla wyszukiwarek">
+    <meta name="keywords" content="portfolio">
+    <meta name="author" content="Kamil Front-end developer">
+
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="script2.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto+Slab:wght@600&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="backgroundsitems">
+        <div class="backgr1">
+            <div class="menu">
+                <ul id="menu_bracket">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <table class="project_gif">
+                <tr>
+                    <td id="first_row" colspan="5">SAMPLE PROJECTS</td>
+                    <td id="gif_info" rowspan="3">Weather App - this is an application that uses "live data" in the form
+                        of an API, in which, after entering a specific city, the program generates the amount of harmful
+                        substances in the air. In addition, the first value is the overall air quality factor. Each
+                        substance has a precise scale that helps to determine whether there is too much of a given
+                        substance in the air.</td>
+                </tr>
+                <tr id="projects_numbers">
+                    <th id="weather_click">PROJECT I</th>
+                    <th id="pokemon_click">PROJECT II</th>
+                    <th id="shop_click">PROJECT III</th>
+                    <th id="todo_click">PROJECT IV</th>
+                    <th>PROJECT V</th>
+                </tr>
+                <tr>
+                    <td id="third_row" colspan="5"><img id="gif" src="img/weather_app.gif"></td>
+
+                </tr>
+
+            </table>
+
+
+
+            <div class="switch_page">
+                <button id="previous_page" onclick="location.href='resume.html'"></button>
+                <button id="next_page" onclick="location.href='contact.html'"></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
