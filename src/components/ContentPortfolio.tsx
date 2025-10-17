@@ -27,8 +27,7 @@ const ContentHome: React.FC = () => {
         ux: ["Expo Haptics", "Safe Area Context", "React Navigation", "i18next"],
         features: ["Breathing exercises", "Progress tracking", "Custom timers", "User statistics", "Multi-language support"]
       },
-      githubUrl: "https://github.com/username/tide-tunes-studio",
-      liveUrl: "https://tidetunes.com",
+      githubUrl: "https://github.com/KamilzRivii/BreatheApp",
       featured: false
     },
     {
@@ -40,7 +39,7 @@ const ContentHome: React.FC = () => {
         ux: ["Toast Message", "Safe Area Context", "React Navigation", "i18next", "Gesture Handler"],
         features: ["Spotify API integration", "Audio playback", "Custom playlists", "Modern UI with animations"]
       },
-      githubUrl: "https://github.com/username/ecommerce-platform",
+      githubUrl: "https://github.com/KamilzRivii/LofiMusicApp",
       featured: false
     },
     {
