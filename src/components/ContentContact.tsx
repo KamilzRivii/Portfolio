@@ -46,7 +46,7 @@ const ContentContact: React.FC = () => {
 
   return (
     <div id="contact">
-      <div className='flex-1 pb-0 p-4 pb-[3rem] mt-[12rem] mb-[6rem] bg-[#0a1628] w-[100%] md:w-[90%] rounded-xl'>
+      <div className='flex-1 pb-0 p-4 pb-[4rem] mt-[12rem] mb-[6rem] bg-[#0a1628] w-[100%] md:w-[90%] rounded-xl'>
         <div className='text-6xl md:text-7xl pb-12 font-mono justify-items-center bg-gradient-to-r from-[#A1C4D7] to-[#E2E8F0] text-transparent bg-clip-text leading-[105px]'>
           <p>{t("contact")}</p>
         </div>
