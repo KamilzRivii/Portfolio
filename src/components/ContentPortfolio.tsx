@@ -12,10 +12,13 @@ interface Project {
   };
   githubUrl?: string;
   liveUrl?: string;
+  mobileUrl?: string;
   featured?: boolean;
 }
 
 const ContentHome: React.FC = () => {
+  const [showModal, setShowModal] = React.useState(false);
+  const [activeMobileUrl, setActiveMobileUrl] = React.useState<string | null>(null);
   const { t } = useTranslation();
   const projects: Project[] = [
     {
@@ -28,6 +31,7 @@ const ContentHome: React.FC = () => {
         features: ["Breathing exercises", "Progress tracking", "Custom timers", "User statistics", "Multi-language support"]
       },
       githubUrl: "https://github.com/KamilzRivii/BreatheApp",
+      mobileUrl: "https://breatheappkamil.netlify.app/",
       featured: false
     },
     {
@@ -120,6 +124,22 @@ const ContentHome: React.FC = () => {
                         </svg>
                       </a>
                     )}
+
+                    {project.mobileUrl && (
+                      <button
+                        onClick={() => {
+                          setActiveMobileUrl(project.mobileUrl || null);
+                          setShowModal(true);
+                        }}
+                        className="p-2 bg-blue-600/50 hover:bg-blue-500 rounded-lg transition-colors group"
+                        title={t("viewmobile")}
+                      >
+                        <svg className="w-5 h-5 text-blue-200 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4h10a2 2 0 012 2v12a2 2 0 01-2 2H7a2 2 0 01-2-2V6a2 2 0 012-2z" />
+                        </svg>
+                      </button>
+                    )}
+
                   </div>
                 </div>
                 
@@ -178,6 +198,26 @@ const ContentHome: React.FC = () => {
           </div>
         </div>
       </div>
+      {showModal && activeMobileUrl && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
+          <div className="bg-[#0a1628] rounded-2xl p-4 shadow-xl relative w-[440px] h-[900px] border-[16px] border-[#333]">
+            <iframe
+              src={activeMobileUrl}
+              width="100%"
+              height="100%"
+              style={{ border: "none", borderRadius: "20px" }}
+              allow="fullscreen"
+              className="overflow-scroll scrollbar-hide"
+            ></iframe>
+            <button
+              onClick={() => setShowModal(false)}
+              className="absolute top-0 right-0 text-white bg-red-600 px-2 py-1"
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
