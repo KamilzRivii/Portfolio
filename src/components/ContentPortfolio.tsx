@@ -203,6 +203,7 @@ const ContentHome: React.FC = () => {
           <div className="bg-[#0a1628] rounded-2xl p-4 shadow-xl relative w-[440px] h-[900px] border-[16px] border-[#333]">
             <iframe
               src={activeMobileUrl}
+              title="Mobile preview of Breathe app"
               width="100%"
               height="100%"
               style={{ border: "none", borderRadius: "20px" }}
