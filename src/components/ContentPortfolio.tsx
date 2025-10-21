@@ -16,7 +16,7 @@ interface Project {
   featured?: boolean;
 }
 
-const ContentHome: React.FC = () => {
+const ContentHome = () => {
   const [showModal, setShowModal] = React.useState(false);
   const [activeMobileUrl, setActiveMobileUrl] = React.useState<string | null>(null);
   const { t } = useTranslation();
@@ -72,10 +72,10 @@ const ContentHome: React.FC = () => {
   ];
 
   return (
-    <div id="portfolio">
-      <div className='flex-1 pb-0 p-4 pb-[4rem] mt-[12rem] bg-[#0a1628] w-[100%] md:w-[90%] rounded-xl'>
+    <div id="portfolio" className='pb-[5rem]'>
+      <div className='flex-1 p-6 mt-[12rem] bg-[#0a1628] w-[100%] md:w-[100%] lg:w-[100%] xl:w-[92%] rounded-xl'>
         <div className='w-full flex flex-col items-center'>
-          <div className='text-6xl md:text-7xl font-mono pb-12 bg-gradient-to-r from-[#A1C4D7] to-[#E2E8F0] text-transparent bg-clip-text leading-[105px]'>
+          <div className='text-4xl sm:text-6xl md:text-7xl font-mono pb-6 w-full bg-gradient-to-r from-[#A1C4D7] to-[#E2E8F0] text-transparent bg-clip-text leading-[105px]'>
             <p>{t("check_projects")}</p>
           </div>
           
@@ -83,7 +83,7 @@ const ContentHome: React.FC = () => {
             {projects.map((project) => (
               <div 
                 key={project.id}
-                className="bg-[#1a2332] w-[91%] from-slate-800/50 to-slate-900/50 border-2 border-slate-700/50 rounded-xl p-6 hover:border-[#074D96] transition-all duration-300 backdrop-blur-sm"
+                className="bg-[#1a2332] w-[100%] from-slate-800/50 to-slate-900/50 border-2 border-slate-700/50 rounded-xl p-6 hover:border-[#074D96] transition-all duration-300 backdrop-blur-sm"
               >
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex-1">
@@ -147,52 +147,53 @@ const ContentHome: React.FC = () => {
                   {t(project.descriptionKey)}
                 </p>
                 
-                <div className="grid grid-cols-3 gap-4 mb-5">
-                  {project.tags.frontend && (
-                    <div className="border-l-2 border-purple-500 pl-3">
-                      <div className="text-purple-400 font-semibold text-xs mb-2 uppercase tracking-wide">
-                        {t("frontend")}
-                      </div>
-                      <div className="flex flex-wrap gap-1.5">
-                        {project.tags.frontend.map((tech, i) => (
-                          <span key={i} className="bg-purple-500/10 text-purple-300 px-2 py-0.5 rounded text-xs">
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                  
-                  {project.tags.ux && (
-                    <div className="border-l-2 border-green-500 pl-3">
-                      <div className="text-green-400 font-semibold text-xs mb-2 uppercase tracking-wide">
-                        {t("ux")}
-                      </div>
-                      <div className="flex flex-wrap gap-1.5">
-                        {project.tags.ux.map((tech, i) => (
-                          <span key={i} className="bg-green-500/10 text-green-300 px-2 py-0.5 rounded text-xs">
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                  
-                  {project.tags.features && (
-                    <div className="border-l-2 border-orange-500 pl-3">
-                      <div className="text-orange-400 font-semibold text-xs mb-2 uppercase tracking-wide">
-                        {t("features")}
-                      </div>
-                      <div className="flex flex-wrap gap-1.5">
-                        {project.tags.features.map((feature, i) => (
-                          <span key={i} className="bg-orange-500/10 text-orange-300 px-2 py-0.5 rounded text-xs">
-                            {feature}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                </div>
+<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
+  {project.tags.frontend && (
+    <div className="border-t-2 md:border-t-0 md:border-l-2 border-purple-500 pt-3 md:pt-0 md:pl-3">
+      <div className="text-purple-400 font-semibold text-xs mb-2 uppercase tracking-wide">
+        {t("frontend")}
+      </div>
+      <div className="flex flex-wrap gap-1.5">
+        {project.tags.frontend.map((tech, i) => (
+          <span key={i} className="bg-purple-500/10 text-purple-300 px-2 py-0.5 rounded text-xs">
+            {tech}
+          </span>
+        ))}
+      </div>
+    </div>
+  )}
+
+  {project.tags.ux && (
+    <div className="border-t-2 md:border-t-0 md:border-l-2 border-green-500 pt-3 md:pt-0 md:pl-3">
+      <div className="text-green-400 font-semibold text-xs mb-2 uppercase tracking-wide">
+        {t("ux")}
+      </div>
+      <div className="flex flex-wrap gap-1.5">
+        {project.tags.ux.map((tech, i) => (
+          <span key={i} className="bg-green-500/10 text-green-300 px-2 py-0.5 rounded text-xs">
+            {tech}
+          </span>
+        ))}
+      </div>
+    </div>
+  )}
+
+  {project.tags.features && (
+    <div className="border-t-2 md:border-t-0 md:border-l-2 border-orange-500 pt-3 md:pt-0 md:pl-3">
+      <div className="text-orange-400 font-semibold text-xs mb-2 uppercase tracking-wide">
+        {t("features")}
+      </div>
+      <div className="flex flex-wrap gap-1.5">
+        {project.tags.features.map((feature, i) => (
+          <span key={i} className="bg-orange-500/10 text-orange-300 px-2 py-0.5 rounded text-xs">
+            {feature}
+          </span>
+        ))}
+      </div>
+    </div>
+  )}
+</div>
+
               </div>
             ))}
           </div>
@@ -200,19 +201,33 @@ const ContentHome: React.FC = () => {
       </div>
       {showModal && activeMobileUrl && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
-          <div className="bg-[#0a1628] rounded-2xl p-4 shadow-xl relative w-[440px] h-[900px] border-[16px] border-[#333]">
-            <iframe
-              src={activeMobileUrl}
-              title="Mobile preview of Breathe app"
-              width="100%"
-              height="100%"
-              style={{ border: "none", borderRadius: "20px" }}
-              allow="fullscreen"
-              className="overflow-scroll scrollbar-hide"
-            ></iframe>
+          <div className="relative flex items-center justify-center">
+            {/* Obudowa telefonu */}
+            <div className="bg-black rounded-[3rem] shadow-2xl relative w-[380px] h-[780px] border-[12px] border-gray-800">
+              
+              {/* Głośnik i kamera */}
+              <div className="absolute top-2 left-1/2 -translate-x-1/2 flex items-center space-x-2">
+                <div className="w-20 h-3 bg-gray-700 rounded-full"></div>
+                <div className="w-3 h-3 bg-gray-700 rounded-full"></div>
+              </div>
+
+              {/* Ekran z iframe */}
+              <div className="absolute top-8 bottom-8 left-4 right-4 rounded-[2rem] overflow-hidden bg-white">
+                <iframe
+                  src={activeMobileUrl}
+                  title="Mobile preview of Breathe app"
+                  width="100%"
+                  height="100%"
+                  style={{ border: "none" }}
+                  className="overflow-scroll scrollbar-hide"
+                ></iframe>
+              </div>
+
+            </div>
+            {/* Przycisk zamykania */}
             <button
               onClick={() => setShowModal(false)}
-              className="absolute top-0 right-0 text-white bg-red-600 px-2 py-1"
+              className="absolute top-0 right-5 text-white bg-red-600 px-2 py-1 rounded"
             >
               ✕
             </button>

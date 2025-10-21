@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from "react-i18next";
 
-const ContentResume: React.FC = () => {
+const ContentResume = () => {
   const { t } = useTranslation();
   const skillsData = {
     intermediate: [
@@ -15,9 +15,9 @@ const ContentResume: React.FC = () => {
   };
 
   return (
-    <div id="skills">
-      <div className='flex-1 pb-0 p-4 pb-[4rem] mt-[12rem] bg-[#0a1628] w-[100%] md:w-[90%] rounded-xl'>
-        <div className='text-6xl md:text-7xl pb-12 font-mono justify-items-center bg-gradient-to-r from-[#A1C4D7] to-[#E2E8F0] text-transparent bg-clip-text leading-[105px]'>
+    <div id="skills" className="pb-[5rem]">
+      <div className='flex-1 p-6 mt-[12rem] bg-[#0a1628] w-[100%] md:w-[100%] lg:w-[100%] xl:w-[92%] rounded-xl'>
+        <div className='text-4xl sm:text-6xl md:text-7xl w-full pb-6 font-mono bg-gradient-to-r from-[#A1C4D7] to-[#E2E8F0] text-transparent bg-clip-text leading-[105px]'>
           <p>{t("skills")}</p>
         </div>
 
@@ -26,7 +26,7 @@ const ContentResume: React.FC = () => {
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
             
             {/* Intermediate Level */}
-            <div className='bg-[#1a2332] border border-cyan-500/20 rounded-lg p-8'>
+            <div className='bg-[#1a2332] border-2 border-slate-700/50 hover:border-cyan-500/20 transition-all duration-300 rounded-lg p-8'>
               <div className='flex items-center gap-3 mb-6 pb-4 border-b border-cyan-500/20'>
                 <div className='w-2 h-2 bg-cyan-400 rounded-full'></div>
                 <h2 className='text-xl lg:text-lg xl:text-xl font-bold text-cyan-400 font-mono'>
@@ -47,7 +47,7 @@ const ContentResume: React.FC = () => {
             </div>
 
             {/* Junior Level */}
-            <div className='bg-[#1a2332] border border-purple-500/20 rounded-lg p-8'>
+            <div className='bg-[#1a2332] border-2 border-slate-700/50 hover:border-purple-500/20 transition-all duration-300 rounded-lg p-8'>
               <div className='flex items-center gap-3 mb-6 pb-4 border-b border-purple-500/20'>
                 <div className='w-2 h-2 bg-purple-400 rounded-full'></div>
                 <h2 className='text-xl lg:text-lg xl:text-xl font-bold text-purple-400 font-mono'>

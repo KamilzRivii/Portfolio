@@ -1,19 +1,21 @@
 import React from 'react';
 import { useTranslation } from "react-i18next";
+import linkedinIcon from '../assets/linkedin_icon.png';
+import gmailIcon from '../assets/gmail_icon.png';
 
-const ContentContact: React.FC = () => {
+const ContentContact = () => {
   const { t } = useTranslation();
   const contactLinks = [
     {
       name: 'LinkedIn',
-      icon: '💼',
+      icon: linkedinIcon,
       url: 'https://www.linkedin.com/in/kamil-przyby%C5%82a-72053a1b7/',
       color: 'cyan',
       descriptionKey: 'contactlinks.linkedindesc'
     },
     {
       name: 'Gmail',
-      icon: '📧',
+      icon: gmailIcon,
       url: 'mailto:kamilprzybyla2@gmail.com',
       color: 'purple',
       descriptionKey: 'contactlinks.gmaildesc'
@@ -45,15 +47,15 @@ const ContentContact: React.FC = () => {
   };
 
   return (
-    <div id="contact">
-      <div className='flex-1 pb-0 p-4 pb-[4rem] mt-[12rem] mb-[6rem] bg-[#0a1628] w-[100%] md:w-[90%] rounded-xl'>
-        <div className='text-6xl md:text-7xl pb-12 font-mono justify-items-center bg-gradient-to-r from-[#A1C4D7] to-[#E2E8F0] text-transparent bg-clip-text leading-[105px]'>
+    <div id="contact" className='pb-[5rem]'>
+      <div className='flex-1 p-6 mt-[12rem] mb-[6rem] bg-[#0a1628] w-[100%] md:w-[100%] lg:w-[100%] xl:w-[92%] rounded-xl'>
+        <div className='text-4xl sm:text-6xl md:text-7xl pb-6 w-full font-mono bg-gradient-to-r from-[#A1C4D7] to-[#E2E8F0] text-transparent bg-clip-text leading-[105px]'>
           <p>{t("contact")}</p>
         </div>
 
         <div className='max-w-6xl mx-auto'>
           {/* Main Contact Section */}
-          <div className='bg-[#1a2332] border border-slate-700/50 rounded-lg p-8 mb-8'>
+          <div className='bg-[#1a2332] border border-slate-700/50 rounded-lg p-8 mb-8 border-2 border-slate-700/50 hover:border-[#074D96] transition-all duration-300'>
             <div className='flex items-center gap-3 mb-6 pb-4 border-b border-slate-700/50'>
               <h2 className='text-4xl font-bold text-slate-200 font-mono'>
                 {t("intouch")}
@@ -78,7 +80,7 @@ const ContentContact: React.FC = () => {
                     className={`group bg-slate-800/30 border ${colors.border} ${colors.bg} rounded-lg p-6 transition-all duration-300 hover:shadow-lg ${colors.shadow} flex flex-col items-center text-center`}
                   >
                     <div className={`w-12 h-12 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                      <span className='text-4xl'>{link.icon}</span>
+                      <img src={link.icon} alt={link.name} className="w-10 h-10" />
                     </div>
                     
                     <h3 className={`text-lg font-bold ${colors.text} font-mono mb-2`}>
@@ -96,7 +98,7 @@ const ContentContact: React.FC = () => {
 
           {/* Quick Info Cards */}
           <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
-            <div className='bg-[#1a2332] border border-slate-700/50 rounded-lg p-6'>
+            <div className='bg-[#1a2332] border border-slate-700/50 rounded-lg p-6 border-2 border-slate-700/50 hover:border-[#074D96] transition-all duration-300'>
               <div className='flex items-center gap-3 mb-4'>
                 <div className='w-2 h-2 bg-green-400 rounded-full'></div>
                 <h3 className='text-lg font-bold text-slate-200 font-mono'>
@@ -108,7 +110,7 @@ const ContentContact: React.FC = () => {
               </p>
             </div>
 
-            <div className='bg-[#1a2332] border border-slate-700/50 rounded-lg p-6'>
+            <div className='bg-[#1a2332] border border-slate-700/50 rounded-lg p-6 border-2 border-slate-700/50 hover:border-[#074D96] transition-all duration-300'>
               <div className='flex items-center gap-3 mb-4'>
                 <div className='w-2 h-2 bg-yellow-400 rounded-full'></div>
                 <h3 className='text-lg font-bold text-slate-200 font-mono'>

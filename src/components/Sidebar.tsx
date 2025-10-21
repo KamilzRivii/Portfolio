@@ -6,8 +6,9 @@ import githubIcon from '../assets/github_icon.png';
 import linkedinIcon from '../assets/linkedin_icon.png';
 import gmailIcon from '../assets/gmail_icon.png';
 import './Sidebar.css';
+import ShinyText from "./ShinyText"
 
-const Sidebar: React.FC = () => {
+const Sidebar = () => {
   const { t } = useTranslation();
   const iconLinks = [
     { src: githubIcon, href: 'https://github.com/KamilzRivii', text:'Github Icon' },
@@ -15,13 +16,22 @@ const Sidebar: React.FC = () => {
     { src: gmailIcon, href: 'mailto:kamilprzybyla2@gmail.com', text:'Gmail Icon' },
   ];
 
+  const scrollToSection = (id: string) => {
+    const el = document.getElementById(id);
+    el?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <div className="sidebar bg-[#0a1628] hidden lg:block font-mono rounded-xl px-[4vh] sticky top-[4.5vh] py-[4vh] left-[4.5vh] w-auto h-fit text-white justify-items-start items-start border-2 border-slate-700/50 hover:border-[#074D96] transition-all duration-300 backdrop-blur-sm text-[2vh]">
       <div className='flex items-end gap-3'>
         <img src={faceIcon} alt="Icon" className="w-[5vh] h-[6vh]"/>
         <div>
-          <p>Kamil</p>
-          <p>Przybyła</p>
+          <p>
+            <ShinyText speedSec={4}>Kamil</ShinyText>
+          </p>
+          <p>
+            <ShinyText speedSec={6}>Przybyła</ShinyText>
+          </p>
         </div>
       </div>
       <img src={profilePhoto} alt="Icon" className="w-[26vh] rounded-xl mt-[1vh]"/>
@@ -42,9 +52,11 @@ const Sidebar: React.FC = () => {
           </a>
         ))}
       </div>
-      <a href="#contact" className='mt-[3vh] w-full h-[60px] rounded-full flex cursor-pointer justify-center bg-gradient-to-r from-[#074D96] to-[#0E2A47] group'>
-        <button className='font-semibold text-[1.8vh] animate-shake'>{t("work_together")}</button>
-      </a>
+      <button onClick={() => scrollToSection("contact")} className='mt-[3vh] w-full h-[60px] rounded-full flex cursor-pointer justify-center bg-gradient-to-r from-[#074D96] to-[#0E2A47] group'>
+        <span className='font-semibold text-[1.8vh] animate-shake content-center'>
+          {t("work_together")}
+        </span>
+      </button>
     </div>
   );
 };
