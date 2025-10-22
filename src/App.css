@@ -86,7 +86,7 @@
   }
   .perspective-1000 {
     width: 17rem;
-    height: 17rem;
+    height: 18rem;
   }
 }
 @media (max-width: 1279px) {
@@ -107,6 +107,9 @@
   }
   .flip-card-inner {
     cursor: pointer;
+  }
+  .perspective-1000 {
+    height: 20rem;
   }
 }
 @media (max-width: 600px) {

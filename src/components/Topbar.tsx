@@ -109,7 +109,7 @@ const Topbar = () => {
           isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}
         style={{
-          top: `calc(14.5vh + ${topbarHeight}px)`,
+          top: `calc(9rem + ${topbarHeight}px)`,
           width: 'calc(100% - 2rem)',
           margin: '0 1rem'
         }}

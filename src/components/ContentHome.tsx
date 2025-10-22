@@ -46,7 +46,7 @@ const ContentHome = () => {
         <div className='block sm:flex font-mono gap-6'>
           <button
             onClick={() => scrollToSection("portfolio")}
-            className='mt-[34px] flex w-[170px] md:w-[200px] lg:w-[180px] xl:w-[200px] 
+            className='mt-[34px] flex w-[200px] md:w-[200px] lg:w-[180px] xl:w-[200px] 
                       text-white bg-opacity-50 border border-white bg-gray-800 
                       h-[50px] rounded-full flex cursor-pointer items-center justify-center 
                       transition-all duration-300 hover:bg-gray-600'

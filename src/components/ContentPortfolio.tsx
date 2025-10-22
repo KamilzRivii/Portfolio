@@ -203,7 +203,7 @@ const ContentHome = () => {
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
           <div className="relative flex items-center justify-center">
             {/* Obudowa telefonu */}
-            <div className="bg-black rounded-[3rem] shadow-2xl relative w-[380px] h-[780px] border-[12px] border-gray-800">
+            <div className="bg-black rounded-[3rem] shadow-2xl relative w-[370px] h-[600px] md:w-[380px] md:h-[780px] border-[12px] border-gray-800">
               
               {/* Głośnik i kamera */}
               <div className="absolute top-2 left-1/2 -translate-x-1/2 flex items-center space-x-2">

@@ -76,7 +76,7 @@ const ContentAbout = () => {
                     </div>
                     <div className="absolute inset-0 flip-card-back">
                       <div className="h-full bg-gradient-to-br from-[#1a2332] to-[#074D96] backdrop-blur-sm border-2 border-slate-700/50 hover:border-[#074D96] rounded-lg p-5 flex flex-col justify-center">
-                        <p className="text-white/90 text-xs font-mono leading-relaxed text-justify">{card.backContent}</p>
+                        <p className="text-white/90 text-xs font-mono leading-relaxed">{card.backContent}</p>
                       </div>
                     </div>
                   </div>
