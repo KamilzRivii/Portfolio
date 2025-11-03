@@ -1,10 +1,10 @@
 import React from 'react';
 import { useTranslation } from "react-i18next";
 import faceIcon from '../assets/face_icon.svg';
-import profilePhoto from '../assets/kamil_przybyla.jpg';
-import githubIcon from '../assets/github_icon.png';
-import linkedinIcon from '../assets/linkedin_icon.png';
-import gmailIcon from '../assets/gmail_icon.png';
+import profilePhoto from '../assets/kamil_przybyla.webp';
+import githubIcon from '../assets/github_icon.webp';
+import linkedinIcon from '../assets/linkedin_icon.webp';
+import gmailIcon from '../assets/gmail_icon.webp';
 import './Sidebar.css';
 import ShinyText from "./ShinyText"
 
@@ -34,7 +34,7 @@ const Sidebar = () => {
           </p>
         </div>
       </div>
-      <img src={profilePhoto} alt="Icon" className="w-[26vh] rounded-xl mt-[1vh]"/>
+      <img src={profilePhoto} alt="Profil Image" fetchPriority="high" width={270} height={400} className="rounded-xl mt-[1vh]"/>
       <div className='font-semibold'>
         <p className='pt-[5vh] text-sm text-[#d3d3d3]'>{t("specialization")}</p>
         <p className='text-[1.8vh] pt-1'>Frontend Developer/Tester</p>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useTranslation } from "react-i18next";
-import ukIcon from '../assets/uk_icon.png';
-import polandIcon from '../assets/poland_icon.png';
+import ukIcon from '../assets/uk_icon.webp';
+import polandIcon from '../assets/poland_icon.webp';
 import { motion } from "framer-motion";
 
 const linkClasses = "relative hover:text-white h-10 before:rounded-xl flex items-center px-4 before:absolute before:inset-0 before:border-2 before:border-transparent before:hover:border-slate-200 before:transition-all before:duration-200 before:delay-100";

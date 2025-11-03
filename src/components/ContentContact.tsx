@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from "react-i18next";
-import linkedinIcon from '../assets/linkedin_icon.png';
-import gmailIcon from '../assets/gmail_icon.png';
+import linkedinIcon from '../assets/linkedin_icon.webp';
+import gmailIcon from '../assets/gmail_icon.webp';
 
 const ContentContact = () => {
   const { t } = useTranslation();

@@ -1,10 +1,10 @@
 import React from 'react';
 import { useTranslation } from "react-i18next";
-import downloadIcon from '../assets/download_icon.png';
-import worksIcon from '../assets/works_icon.png';
+import downloadIcon from '../assets/download_icon.webp';
+import worksIcon from '../assets/works_icon.webp';
 import cvFile from '../assets/CV.pdf';
 import DecryptedText from "./DecryptedText";
-import profilePhoto from '../assets/kamil_przybyla.jpg';
+import profilePhoto from '../assets/kamil_przybyla.webp';
 
 const ContentHome = () => {
   const { t } = useTranslation();
@@ -52,11 +52,11 @@ const ContentHome = () => {
                       transition-all duration-300 hover:bg-gray-600'
           >
             <span className='font-semibold text-lg animate-shake'>{t("my_works")}</span>
-            <img src={worksIcon} alt='work icon' className='filter invert h-[30px] ps-6' />
+            <img src={worksIcon} alt='work icon' height={48} width={48} className='filter invert ps-6' />
           </button>
           <a href={cvFile} download="CV_Kamil_Przybyla.pdf" className='mt-[12px] sm:mt-[34px] flex w-[200px] md:w-[250px] lg:w-[200px] xl:w-[250px] text-white bg-opacity-50 bg-gray-800 border border-white h-[50px] rounded-full flex cursor-pointer items-center justify-center transition-all duration-300 hover:bg-gray-600'>
             <button className='font-semibold text-lg animate-shake'>{t("download")}</button>
-            <img src={downloadIcon} alt='download icon' className='filter invert h-[30px] ps-6'></img>
+            <img src={downloadIcon} alt='download icon' height={48} width={48} className='filter invert ps-6'></img>
           </a>
         </div>
       </div>
