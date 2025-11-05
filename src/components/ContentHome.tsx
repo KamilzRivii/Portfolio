@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from "react-i18next";
 import downloadIcon from '../assets/download_icon.webp';
 import worksIcon from '../assets/works_icon.webp';
-import cvFile from '../assets/CV.pdf';
+import cvFile from '../assets/CV_KP.pdf';
 import DecryptedText from "./DecryptedText";
 import profilePhoto from '../assets/kamil_przybyla.webp';
 
