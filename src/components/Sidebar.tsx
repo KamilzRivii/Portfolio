@@ -34,7 +34,7 @@ const Sidebar = () => {
           </p>
         </div>
       </div>
-      <img src={profilePhoto} alt="Profil Image" fetchPriority="high" width={270} height={400} className="rounded-xl mt-[1vh]"/>
+      <img src={profilePhoto} alt="Portrait" fetchPriority="high" width={270} height={400} className="rounded-xl mt-[1vh]"/>
       <div className='font-semibold'>
         <p className='pt-[5vh] text-sm text-[#d3d3d3]'>{t("specialization")}</p>
         <p className='text-[1.8vh] pt-1'>Frontend Developer/Tester</p>
