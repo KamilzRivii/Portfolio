@@ -147,52 +147,52 @@ const ContentHome = () => {
                   {t(project.descriptionKey)}
                 </p>
                 
-<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
-  {project.tags.frontend && (
-    <div className="border-t-2 md:border-t-0 md:border-l-2 border-purple-500 pt-3 md:pt-0 md:pl-3">
-      <div className="text-purple-400 font-semibold text-xs mb-2 uppercase tracking-wide">
-        {t("frontend")}
-      </div>
-      <div className="flex flex-wrap gap-1.5">
-        {project.tags.frontend.map((tech, i) => (
-          <span key={i} className="bg-purple-500/10 text-purple-300 px-2 py-0.5 rounded text-xs">
-            {tech}
-          </span>
-        ))}
-      </div>
-    </div>
-  )}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
+                  {project.tags.frontend && (
+                    <div className="border-t-2 md:border-t-0 md:border-l-2 border-purple-500 pt-3 md:pt-0 md:pl-3">
+                      <div className="text-purple-400 font-semibold text-xs mb-2 uppercase tracking-wide">
+                        {t("frontend")}
+                      </div>
+                      <div className="flex flex-wrap gap-1.5">
+                        {project.tags.frontend.map((tech, i) => (
+                          <span key={i} className="bg-purple-500/10 text-purple-300 px-2 py-0.5 rounded text-xs">
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
 
-  {project.tags.ux && (
-    <div className="border-t-2 md:border-t-0 md:border-l-2 border-green-500 pt-3 md:pt-0 md:pl-3">
-      <div className="text-green-400 font-semibold text-xs mb-2 uppercase tracking-wide">
-        {t("ux")}
-      </div>
-      <div className="flex flex-wrap gap-1.5">
-        {project.tags.ux.map((tech, i) => (
-          <span key={i} className="bg-green-500/10 text-green-300 px-2 py-0.5 rounded text-xs">
-            {tech}
-          </span>
-        ))}
-      </div>
-    </div>
-  )}
+                  {project.tags.ux && (
+                    <div className="border-t-2 md:border-t-0 md:border-l-2 border-green-500 pt-3 md:pt-0 md:pl-3">
+                      <div className="text-green-400 font-semibold text-xs mb-2 uppercase tracking-wide">
+                        {t("ux")}
+                      </div>
+                      <div className="flex flex-wrap gap-1.5">
+                        {project.tags.ux.map((tech, i) => (
+                          <span key={i} className="bg-green-500/10 text-green-300 px-2 py-0.5 rounded text-xs">
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
 
-  {project.tags.features && (
-    <div className="border-t-2 md:border-t-0 md:border-l-2 border-orange-500 pt-3 md:pt-0 md:pl-3">
-      <div className="text-orange-400 font-semibold text-xs mb-2 uppercase tracking-wide">
-        {t("features")}
-      </div>
-      <div className="flex flex-wrap gap-1.5">
-        {project.tags.features.map((feature, i) => (
-          <span key={i} className="bg-orange-500/10 text-orange-300 px-2 py-0.5 rounded text-xs">
-            {feature}
-          </span>
-        ))}
-      </div>
-    </div>
-  )}
-</div>
+                  {project.tags.features && (
+                    <div className="border-t-2 md:border-t-0 md:border-l-2 border-orange-500 pt-3 md:pt-0 md:pl-3">
+                      <div className="text-orange-400 font-semibold text-xs mb-2 uppercase tracking-wide">
+                        {t("features")}
+                      </div>
+                      <div className="flex flex-wrap gap-1.5">
+                        {project.tags.features.map((feature, i) => (
+                          <span key={i} className="bg-orange-500/10 text-orange-300 px-2 py-0.5 rounded text-xs">
+                            {feature}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
 
               </div>
             ))}
@@ -203,7 +203,7 @@ const ContentHome = () => {
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
           <div className="relative flex items-center justify-center">
             {/* Obudowa telefonu */}
-            <div className="bg-black rounded-[3rem] shadow-2xl relative w-[370px] h-[600px] md:w-[380px] md:h-[780px] border-[12px] border-gray-800">
+            <div className="bg-black rounded-[3rem] shadow-2xl relative w-[380px] h-[850px] md:w-[420px] border-[12px] border-gray-800">
               
               {/* Głośnik i kamera */}
               <div className="absolute top-2 left-1/2 -translate-x-1/2 flex items-center space-x-2">
