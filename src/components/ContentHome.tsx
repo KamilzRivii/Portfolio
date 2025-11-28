@@ -18,7 +18,7 @@ const ContentHome = () => {
 
 
     <div id="home" className="min-h-[83vh] scroll-mt-[83vh] grid items-end w-[100%] md:w-[100%] lg:w-[100%] xl:w-[92%]">
-      <div className="hidden sm:flex lg:hidden items-center text-white p-6 bg-[#0a1628] justify-around from-slate-800/50 to-slate-900/50 border-2 border-slate-700/50 rounded-xl p-6 hover:border-[#074D96] transition-all duration-300 backdrop-blur-sm">
+      <div className="hidden sm:flex lg:hidden items-center text-white p-6 bg-[#0a1628] justify-around from-slate-800/50 to-slate-900/50 rounded-xl p-6 border-2 border-[#4682B4] hover:border-[#074D96] transition-all duration-300 backdrop-blur-sm">
         <img 
           src={profilePhoto} 
           alt="Profile" 
@@ -31,7 +31,7 @@ const ContentHome = () => {
           <p className="text-lg font-semibold">Żory, Śląskie</p>
         </div>
       </div>
-      <div className='flex-1 p-6 bg-[#0a1628] rounded-xl'>
+      <div className='flex-1 p-6 bg-[#0a1628] rounded-xl border-2 border-[#4682B4] hover:border-[#074D96] transition-all duration-300'>
         <div className='xl:text-7xl lg:text-6xl text-5xl leading-none font-mono bg-gradient-to-r from-[#A1C4D7] to-[#E2E8F0] text-transparent bg-clip-text leading-[105px]'>
           <p>
             <DecryptedText text={t("hello")} speed={60} className="block" />
@@ -46,7 +46,7 @@ const ContentHome = () => {
         <div className='block sm:flex font-mono gap-6'>
           <button
             onClick={() => scrollToSection("portfolio")}
-            className='mt-[34px] flex w-[200px] md:w-[200px] lg:w-[180px] xl:w-[200px] 
+            className='mt-[34px] flex w-[100%] md:w-[200px] lg:w-[180px] xl:w-[200px] 
                       text-white bg-opacity-50 border border-white bg-gray-800 
                       h-[50px] rounded-full flex cursor-pointer items-center justify-center 
                       transition-all duration-300 hover:bg-gray-600'
@@ -54,7 +54,7 @@ const ContentHome = () => {
             <span className='font-semibold text-lg animate-shake'>{t("my_works")}</span>
             <img src={worksIcon} alt='work icon' height={48} width={48} className='filter invert ps-6' />
           </button>
-          <a href={cvFile} download="CV_Kamil_Przybyla.pdf" className='mt-[12px] sm:mt-[34px] flex w-[200px] md:w-[250px] lg:w-[200px] xl:w-[250px] text-white bg-opacity-50 bg-gray-800 border border-white h-[50px] rounded-full flex cursor-pointer items-center justify-center transition-all duration-300 hover:bg-gray-600'>
+          <a href={cvFile} download="CV_Kamil_Przybyla.pdf" className='mt-[12px] sm:mt-[34px] flex w-[100%] md:w-[250px] lg:w-[200px] xl:w-[250px] text-white bg-opacity-50 bg-gray-800 border border-white h-[50px] rounded-full flex cursor-pointer items-center justify-center transition-all duration-300 hover:bg-gray-600'>
             <button className='font-semibold text-lg animate-shake'>{t("download")}</button>
             <img src={downloadIcon} alt='download icon' height={48} width={48} className='filter invert ps-6'></img>
           </a>

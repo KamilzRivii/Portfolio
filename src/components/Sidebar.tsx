@@ -22,7 +22,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="sidebar bg-[#0a1628] hidden lg:block font-mono rounded-xl px-[4vh] sticky top-[4.5vh] py-[4vh] left-[4.5vh] w-auto h-fit text-white justify-items-start items-start border-2 border-slate-700/50 hover:border-[#074D96] transition-all duration-300 backdrop-blur-sm text-[2vh]">
+    <div className="sidebar bg-[#0a1628] hidden lg:block font-mono rounded-xl px-[4vh] sticky top-[4.5vh] py-[4vh] left-[4.5vh] w-auto h-fit text-white justify-items-start items-start border-2 border-[#4682B4] hover:border-[#074D96] transition-all duration-300 backdrop-blur-sm text-[2vh]">
       <div className='flex items-end gap-3'>
         <img src={faceIcon} alt="Icon" className="w-[5vh] h-[6vh]"/>
         <div>

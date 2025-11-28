@@ -54,7 +54,7 @@ const Topbar = () => {
   
   return (
     <>
-      <div className="sticky top-[4.5vh] h-[5.5rem] px-4 bg-black z-40 rounded-xl bg-opacity-50 w-[100%] sm:w-full md:w-[100%] lg:w-[100%] xl:w-[92%] flex justify-start items-center text-lg mb-4">
+      <div className="sticky top-[4.5vh] h-[5.5rem] px-4 bg-black z-40 rounded-xl bg-opacity-50 w-[100%] sm:w-full md:w-[100%] lg:w-[100%] xl:w-[92%] flex justify-start items-center text-lg mb-4 border-2 border-[#4682B4] hover:border-[#074D96] transition-all duration-300">
         <nav className="flex font-mono text-slate-400 gap-6 items-center w-full justify-between">
           {/* Desktop Menu */}
           <div className='hidden md:flex text-lg xl:text-xl whitespace-nowrap'>

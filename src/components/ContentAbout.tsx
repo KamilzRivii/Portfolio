@@ -47,7 +47,7 @@ const ContentAbout = () => {
 
   return (
     <div id="about" className="pb-[5rem]">
-      <div className='flex-1 p-6 pb-6 mt-[12rem] bg-[#0a1628] w-[100%] md:w-[100%] lg:w-[100%] xl:w-[92%] rounded-xl'>
+      <div className='flex-1 p-6 pb-6 mt-[12rem] bg-[#0a1628] w-[100%] md:w-[100%] lg:w-[100%] xl:w-[92%] rounded-xl border-2 border-[#4682B4] hover:border-[#074D96] transition-all duration-300'>
         <div className='w-full flex flex-col items-center'>
           <div className='text-4xl sm:text-6xl md:text-7xl pb-6 w-full font-mono bg-gradient-to-r from-[#A1C4D7] to-[#E2E8F0] text-transparent bg-clip-text leading-[105px]'>
             <p>{t("aboutme")}</p>
