@@ -28,13 +28,15 @@ i18n.use(initReactI18next).init({
           breathe: "A mobile application for meditation and mindfulness practices. Features guided breathing exercises, meditation timers, and progress tracking to help users improve their mental wellbeing.",
           lofi: "A mobile application for streaming and listening to lofi music. The app integrates with Spotify’s API to fetch tracks and playlists, offering users a smooth and relaxing listening experience. Features include audio playback, custom playlists, and a modern UI with animations.",
           b2b: "A comprehensive sales management system for B2B companies, providing tools for lead management, sales tracking, and customer relationship management. The focus was on building a robust frontend interface with clear data visualization and user-friendly workflows.",
-          dart: "A mobile application for dart players to keep track of scores and monitor progress during matches. The app supports multiple players, automatically updates points, and provides a clear history of score changes throughout the game."
+          dart: "A mobile application for dart players to keep track of scores and monitor progress during matches. The app supports multiple players, automatically updates points, and provides a clear history of score changes throughout the game.",
+          portfolioAga: "A modern, fully responsive portfolio website built with Next.js and TypeScript, showcasing data visualization expertise and Power BI development skills. Features dynamic project management with Firebase, comprehensive testing suite, and an intuitive user experience with custom circular navigation."
         },   
         titles: {
           breathe: "Breathe - Mobile Meditation App",
           lofi: "LofiMusic - Chill Beats Player",
           b2b: "B2B - Sales Platform",
-          dart: "DartApp - Score Tracker"
+          dart: "DartApp - Score Tracker",
+          portfolioAga: "Portfolio Aga"
         },
         viewgithub: "View on GitHub",
         viewlive: "View Live Project",
@@ -91,13 +93,15 @@ i18n.use(initReactI18next).init({
           breathe: "Mobilna aplikacja do medytacji i praktyk uważności. Zawiera ćwiczenia oddechowe, timery medytacji oraz śledzenie postępów, aby wspierać dobrostan psychiczny użytkowników.",
           lofi: "Mobilna aplikacja do streamowania i słuchania muzyki lofi. Integruje się z API Spotify, aby pobierać utwory i playlisty, oferując użytkownikom relaksujące doświadczenie. Funkcje obejmują odtwarzanie audio, własne playlisty i nowoczesny interfejs z animacjami.",
           b2b: "Kompleksowy system zarządzania sprzedażą dla firm B2B, oferujący narzędzia do zarządzania leadami, śledzenia sprzedaży i relacji z klientami. Skupiono się na stworzeniu solidnego interfejsu frontendowego z czytelną wizualizacją danych i intuicyjnymi procesami.",
-          dart: "Mobilna aplikacja dla graczy w darta do liczenia punktów i śledzenia przebiegu rozgrywek. Obsługuje wielu graczy, automatycznie aktualizuje wyniki i zapewnia przejrzystą historię zmian punktacji."
+          dart: "Mobilna aplikacja dla graczy w darta do liczenia punktów i śledzenia przebiegu rozgrywek. Obsługuje wielu graczy, automatycznie aktualizuje wyniki i zapewnia przejrzystą historię zmian punktacji.",
+          portfolioAga: "Nowoczesna, w pełni responsywna witryna internetowa z portfolio, zbudowana w oparciu o Next.js i TypeScript, prezentująca wiedzę z zakresu wizualizacji danych i rozwoju Power BI. Oferuje dynamiczne zarządzanie projektami z wykorzystaniem Firebase, kompleksowy zestaw testów oraz intuicyjny interfejs użytkownika z niestandardową, cykliczną nawigacją."
         },
         titles: {
           breathe: "Breathe - Aplikacja do Medytacji",
           lofi: "LofiMusic - Odtwarzacz Chill Beats",
           b2b: "B2B - Platforma Sprzedażowa",
-          dart: "DartApp - Licznik Punktów"
+          dart: "DartApp - Licznik Punktów",
+          portfolioAga: "Portfolio Aga"
         },
         viewgithub: "Zobacz na GitHub",
         viewlive: "Zobacz Projekt Online",

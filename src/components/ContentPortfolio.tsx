@@ -48,6 +48,19 @@ const ContentHome = () => {
     },
     {
       id: 3,
+      titleKey: "titles.portfolioAga",
+      descriptionKey: "projects.portfolioAga",
+      tags: {
+        frontend: ["React", "TypeScript", "MUI", "Next", "Jest", "RTL", "Firebase"],
+        ux: ["Responsive Design", "Modal Dialogs", "Swiper Carousel", "Smooth Animations"],
+        features: ["Dynamic project showcase with Firebase integration", "Real-time data updates", "Mobile-first responsive layout", "SEO optimization", "Modular component architecture"]
+      },
+      githubUrl: "https://github.com/KamilzRivii/AgaPortfolio",
+      liveUrl: "https://portfolio-aga-4370c.web.app/projects",
+      featured: false
+    },
+    {
+      id: 4,
       titleKey: "titles.b2b",
       descriptionKey: "projects.b2b",
       tags: {
@@ -59,7 +72,7 @@ const ContentHome = () => {
       featured: false
     },
     {
-      id: 4,
+      id: 5,
       titleKey: "titles.dart",
       descriptionKey: "projects.dart",
       tags: {
