@@ -48,6 +48,18 @@ const ContentHome = () => {
     },
     {
       id: 3,
+      titleKey: "titles.dailyFocus",
+      descriptionKey: "projects.dailyFocus",
+      tags: {
+        frontend: ["React Native", "TypeScript", "Expo", "Expo Router", "AsyncStorage", "Ionicons"],
+        ux: ["Local Notifications", "Daily Reset Logic", "Haptic Feedback", "Minimal UI"],
+        features: ["Daily habit tracking", "Local data persistence", "One-time reminders", "Simple and intuitive design"]
+      },
+      githubUrl: "https://github.com/KamilzRivii/dailyfocus-react-native",
+      featured: false
+    },
+    {
+      id: 4,
       titleKey: "titles.portfolioAga",
       descriptionKey: "projects.portfolioAga",
       tags: {
@@ -60,7 +72,7 @@ const ContentHome = () => {
       featured: false
     },
     {
-      id: 4,
+      id: 5,
       titleKey: "titles.b2b",
       descriptionKey: "projects.b2b",
       tags: {
@@ -72,7 +84,7 @@ const ContentHome = () => {
       featured: false
     },
     {
-      id: 5,
+      id: 6,
       titleKey: "titles.dart",
       descriptionKey: "projects.dart",
       tags: {
