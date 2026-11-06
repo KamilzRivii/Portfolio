@@ -83,17 +83,6 @@ const ContentHome = () => {
       liveUrl: "https://web.keno-energy.com/",
       featured: false
     },
-    {
-      id: 6,
-      titleKey: "titles.dart",
-      descriptionKey: "projects.dart",
-      tags: {
-        frontend: ["React Native", "Expo", "Redux Toolkit", "React Native Paper"],
-        ux: ["Google Sign-In", "Safe Area Context", "Gesture Handler", "i18next", "Collapsible UI", "Linear Gradient", "Blur Effects"],
-        features: ["Score tracking for multiple players", "Game progress history", "Firebase integration", "Authentication (Google Sign-In)", "Audio playback", "Multi-language support"]
-      },
-      featured: true
-    },
   ];
 
   return (

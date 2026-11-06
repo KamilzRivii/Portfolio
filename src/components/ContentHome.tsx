@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from "react-i18next";
 import downloadIcon from '../assets/download_icon.webp';
 import worksIcon from '../assets/works_icon.webp';
-import cvFile from '../assets/KP_Resume_CV.pdf';
+import cvFile from '../assets/Kamil_Przybyla_Resume_QA.pdf';
 import DecryptedText from "./DecryptedText";
 import profilePhoto from '../assets/kamil_przybyla.webp';
 
@@ -18,7 +18,7 @@ const ContentHome = () => {
 
 
     <div id="home" className="min-h-[83vh] scroll-mt-[83vh] grid items-end w-[100%] md:w-[100%] lg:w-[100%] xl:w-[92%]">
-      <div className="hidden sm:flex lg:hidden items-center text-white p-6 bg-[#0a1628] justify-around from-slate-800/50 to-slate-900/50 rounded-xl p-6 border-2 border-[#4682B4] hover:border-[#074D96] transition-all duration-300 backdrop-blur-sm">
+      <div className="hidden sm:flex lg:hidden items-center text-white bg-[#0a1628] justify-around from-slate-800/50 to-slate-900/50 rounded-xl p-6 border-2 border-[#4682B4] hover:border-[#074D96] transition-all duration-300 backdrop-blur-sm">
         <img 
           src={profilePhoto} 
           alt="Profile" 
@@ -26,7 +26,7 @@ const ContentHome = () => {
         />
         <div className="text-center font-mono bg-[#1a2332] p-6 rounded-xl">
           <p className="text-sm text-[#d3d3d3]">{t("specialization")}</p>
-          <p className="text-lg font-semibold">Frontend Developer/Tester</p>
+          <p className="text-lg font-semibold">QA Developer / Frontend Developer</p>
           <p className="text-sm text-[#d3d3d3] mt-3">{t("location")}</p>
           <p className="text-lg font-semibold">Żory, Śląskie</p>
         </div>
@@ -40,7 +40,7 @@ const ContentHome = () => {
             <DecryptedText text={t("name")} speed={60} className="block" />
           </p>
           <p>
-            <DecryptedText text="Mid Frontend Developer" speed={80} className="block" />
+            <DecryptedText text="QA Developer / Frontend Developer" speed={80} className="block" />
           </p>
         </div>
         <div className='block sm:flex font-mono gap-6'>
@@ -54,7 +54,7 @@ const ContentHome = () => {
             <span className='font-semibold text-lg animate-shake'>{t("my_works")}</span>
             <img src={worksIcon} alt='work icon' height={48} width={48} className='filter invert ps-6' />
           </button>
-          <a href={cvFile} download="CV_Kamil_Przybyla.pdf" className='mt-[12px] sm:mt-[34px] flex w-[100%] md:w-[250px] lg:w-[200px] xl:w-[250px] text-white bg-opacity-50 bg-gray-800 border border-white h-[50px] rounded-full flex cursor-pointer items-center justify-center transition-all duration-300 hover:bg-gray-600'>
+          <a href={cvFile} download="Kamil_Przybyla_Resume_QA.pdf" className='mt-[12px] sm:mt-[34px] flex w-[100%] md:w-[250px] lg:w-[200px] xl:w-[250px] text-white bg-opacity-50 bg-gray-800 border border-white h-[50px] rounded-full cursor-pointer items-center justify-center transition-all duration-300 hover:bg-gray-600'>
             <button className='font-semibold text-lg animate-shake'>{t("download")}</button>
             <img src={downloadIcon} alt='download icon' height={48} width={48} className='filter invert ps-6'></img>
           </a>

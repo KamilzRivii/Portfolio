@@ -5,20 +5,28 @@ const ContentResume = () => {
   const { t } = useTranslation();
   const skillsData = {
     frontend: {
-      intermediate: ['JavaScript', 'HTML5', 'React', 'CSS3', 'jQuery', 'Media Queries', 'Bootstrap', 'Tailwind'],
-      junior: ['Typescript', 'Next', 'Material UI']
-    },
-    tools: {
-      intermediate: ['Figma', 'GIT/Github', 'API REST', 'AI Tools'],
-      junior: ['npm/Vite', 'Firebase', 'Redux']
+      intermediate: ['React.js', 'Next.js', 'JavaScript (ES6+)', 'TypeScript', 'HTML5 & CSS3', 'Tailwind', 'Bootstrap', 'jQuery'],
+      junior: []
     },
     testing: {
-      intermediate: ['Postman', 'Manual QA Testing', 'Lighthouse'],
+      intermediate: ['Playwright', 'E2E Testing', 'Postman', 'Manual & Exploratory Testing', 'API Testing', 'Regression Testing', 'Cross-browser Testing', 'DevTools', 'Lighthouse', 'Test Reporting'],
       junior: ['Jest', 'React Testing Library']
+    },
+    cicd: {
+      intermediate: ['Jenkins', 'Azure DevOps', 'Git/Github', 'Jira', 'Scrum', 'WebStorm'],
+      junior: []
+    },
+    data: {
+      intermediate: ['Grafana', 'MongoDB'],
+      junior: ['SQL basics']
     },
     mobile: {
       intermediate: [],
-      junior: ['React Native', 'React Native Web', 'Expo']
+      junior: ['React Native', 'Expo']
+    },
+    languages: {
+      intermediate: ['Polish (Native)', 'English (B2)', 'German (A1)', 'Italian (A1)'],
+      junior: []
     }
   };
 

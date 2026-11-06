@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 import faceIcon from '../assets/face_icon.svg';
 import profilePhoto from '../assets/kamil_przybyla.webp';
 import githubIcon from '../assets/github_icon.webp';
-import linkedinIcon from '../assets/linkedin_icon.webp';
 import gmailIcon from '../assets/gmail_icon.webp';
 import './Sidebar.css';
 import ShinyText from "./ShinyText"
@@ -12,7 +11,6 @@ const Sidebar = () => {
   const { t } = useTranslation();
   const iconLinks = [
     { src: githubIcon, href: 'https://github.com/KamilzRivii', text:'Github Icon' },
-    { src: linkedinIcon, href: 'https://www.linkedin.com/in/kamil-przyby%C5%82a-72053a1b7/', text:'Linkedin Icon' },
     { src: gmailIcon, href: 'mailto:kamilprzybyla2@gmail.com', text:'Gmail Icon' },
   ];
 
@@ -22,7 +20,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="sidebar bg-[#0a1628] hidden lg:block font-mono rounded-xl px-[4vh] sticky top-[4.5vh] py-[4vh] left-[4.5vh] w-auto h-fit text-white justify-items-start items-start border-2 border-[#4682B4] hover:border-[#074D96] transition-all duration-300 backdrop-blur-sm text-[2vh]">
+    <div className="sidebar bg-[#0a1628] hidden lg:block font-mono rounded-xl px-[4vh] sticky top-[4.5vh] py-[4vh] left-[4.5vh] w-auto h-[91vh] text-white justify-items-start items-start border-2 border-[#4682B4] hover:border-[#074D96] transition-all duration-300 backdrop-blur-sm text-[2vh]">
       <div className='flex items-end gap-3'>
         <img src={faceIcon} alt="Icon" className="w-[5vh] h-[6vh]"/>
         <div>
@@ -37,7 +35,7 @@ const Sidebar = () => {
       <img src={profilePhoto} alt="Portrait" fetchPriority="high" width={270} height={400} className="rounded-xl mt-[1vh]"/>
       <div className='font-semibold'>
         <p className='pt-[5vh] text-sm text-[#d3d3d3]'>{t("specialization")}</p>
-        <p className='text-[1.8vh] pt-1'>Frontend Developer/Tester</p>
+        <p className='text-[1.8vh] pt-1'>QA Developer / Frontend Developer</p>
       </div>
       <div className='font-semibold'>
         <p className='pt-[4vh] text-sm text-[#d3d3d3]'>{t("location")}</p>

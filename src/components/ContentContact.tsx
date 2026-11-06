@@ -1,18 +1,10 @@
 import React from 'react';
 import { useTranslation } from "react-i18next";
-import linkedinIcon from '../assets/linkedin_icon.webp';
 import gmailIcon from '../assets/gmail_icon.webp';
 
 const ContentContact = () => {
   const { t } = useTranslation();
   const contactLinks = [
-    {
-      name: 'LinkedIn',
-      icon: linkedinIcon,
-      url: 'https://www.linkedin.com/in/kamil-przyby%C5%82a-72053a1b7/',
-      color: 'cyan',
-      descriptionKey: 'contactlinks.linkedindesc'
-    },
     {
       name: 'Gmail',
       icon: gmailIcon,
@@ -55,7 +47,7 @@ const ContentContact = () => {
 
         <div className='max-w-6xl mx-auto'>
           {/* Main Contact Section */}
-          <div className='bg-[#1a2332] border border-slate-700/50 rounded-lg p-8 mb-8 border-2 border-slate-700/50 hover:border-[#074D96] transition-all duration-300'>
+          <div className='bg-[#1a2332] rounded-lg p-8 mb-8 border-2 border-slate-700/50 hover:border-[#074D96] transition-all duration-300'>
             <div className='flex items-center gap-3 mb-6 pb-4 border-b border-slate-700/50'>
               <h2 className='text-4xl font-bold text-slate-200 font-mono'>
                 {t("intouch")}
@@ -98,7 +90,7 @@ const ContentContact = () => {
 
           {/* Quick Info Cards */}
           <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
-            <div className='bg-[#1a2332] border border-slate-700/50 rounded-lg p-6 border-2 border-slate-700/50 hover:border-[#074D96] transition-all duration-300'>
+            <div className='bg-[#1a2332] rounded-lg p-6 border-2 border-slate-700/50 hover:border-[#074D96] transition-all duration-300'>
               <div className='flex items-center gap-3 mb-4'>
                 <div className='w-2 h-2 bg-green-400 rounded-full'></div>
                 <h3 className='text-lg font-bold text-slate-200 font-mono'>
@@ -110,7 +102,7 @@ const ContentContact = () => {
               </p>
             </div>
 
-            <div className='bg-[#1a2332] border border-slate-700/50 rounded-lg p-6 border-2 border-slate-700/50 hover:border-[#074D96] transition-all duration-300'>
+            <div className='bg-[#1a2332] rounded-lg p-6 border-2 border-slate-700/50 hover:border-[#074D96] transition-all duration-300'>
               <div className='flex items-center gap-3 mb-4'>
                 <div className='w-2 h-2 bg-yellow-400 rounded-full'></div>
                 <h3 className='text-lg font-bold text-slate-200 font-mono'>
